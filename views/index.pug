@@ -1,0 +1,22 @@
+html
+	head
+		title= title
+	body
+		h1= message
+		form(action='http://localhost:3000/data' method='POST')
+			| First Name: 
+			input(type='text' name='first_name')
+			br
+			br
+			| Last Name: 
+			input(type='text' name='last_name')
+			br
+			br
+			label(for='template') Choose a template:
+			select#template(name='template')
+				option(value='temp1') temp1
+				option(value='2nd template') 2nd template
+				option(value='3rd template') 3rd template
+			br
+			br
+			input(type='submit' value='Submit')
